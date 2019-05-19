@@ -1,7 +1,7 @@
 <header>
     <nav class="breadcrumb">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relURL }}">/{{ .Name }}</a>
-        {{ end }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a> {{ end }}
     </nav>
+    <h1 style="text-align: center">{{ .Site.Title }}</h1>
 </header>
